@@ -8,7 +8,7 @@ SMUT=function(G,mediator,outcome,outcome_type="continuous",method="score",
   # p_value_beta is the p value for testing beta in the mediator model
   # mediator model: mediator ~ intercept + G*beta + error
   obj=SKAT_Null_Model(mediator~1,out_type="C")
-  p_value_beta=SKAT( as.matrix(cbind(mediator,G)), obj,impute.method="bestguess")$p.value
+  p_value_beta=SKAT( as.matrix(G), obj,impute.method="bestguess")$p.value
 
   # p_value_IUT is the p value for testing theta*beta based on intersection-union test
   p_value_IUT=max(c(p_value_theta,p_value_beta))

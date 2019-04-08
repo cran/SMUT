@@ -1,12 +1,12 @@
-0491616f78cd8a64202a3a39c8ba4134 *DESCRIPTION
+0abcabab5b3dd50d2912d0c2fc3deaef *DESCRIPTION
 f897c232aff91c6dbba4426f3aa3eb33 *NAMESPACE
 7804f87ef5cfea51fdf45847372be528 *R/RcppExports.R
-a6494db7e256f6bbf16a64e1577817da *R/SMUT.R
-03766a789e4778762910fc223923db24 *R/Testing_coefficient_of_mediator.R
+82c43006df1bb13c590d6378e7026698 *R/SMUT.R
+b3351573057989a0aa20d4f6d29139c2 *R/Testing_coefficient_of_mediator.R
 3a3332d7a7148fa230fa4870069a40b8 *R/exampledata.R
 a0fd627d1727200b2d31a945155061fa *data/Genotype_data.rda
 4891150f8c29ffe1a37689cceb69c61e *man/Genotype_data.Rd
-bdc3769b1ccab0d449600114158ee330 *man/SMUT.Rd
+7e48d47a0ad3c5d2611d537f804053e1 *man/SMUT.Rd
 a83fa96487fa1d2862e86c884f9e0e83 *man/Testing_coefficient_of_mediator.Rd
 6ace916adc58641c2802785e9b56b58a *man/eigenMapMatMult.Rd
 b4f0b014ec53404e843dbc718fabf57e *src/Makevars

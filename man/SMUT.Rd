@@ -5,7 +5,7 @@
 Multi-SNP Mediation Intersection-Union Test
 }
 \description{
-Testing the mediation effect of multiple SNPs on an outcome through a gene.
+Testing the mediation effect of multiple SNPs on an outcome through a mediator.
 }
 
 \author{
@@ -116,6 +116,6 @@ print(p_value)
 # p_value_IUT is the p value for the mediation effect.
 # we have non-significant(at alpha level 0.05) mediation effects (p_value_IUT = 0.5596977).
 
-# Thanks for using our R package SMUT ~~
+# Thanks for using our R package SMUT 
 }
 

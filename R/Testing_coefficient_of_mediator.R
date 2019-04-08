@@ -33,7 +33,7 @@ Testing_coefficient_of_mediator=function(G,mediator,outcome,outcome_type="contin
                         "Q_null"=Q_null,"intercept"=intercept,"sigma2_error"=sigma2_error)
 
     # E step
-    D=diag(rep(sigma2_gamma,ncol(G)) )
+    D=diag(rep(sigma2_gamma,ncol(G)),nrow = ncol(G), ncol = ncol(G) )
     V=eigenMapMatMult(eigenMapMatMult(G, D), t(G))+sigma2_error*diag(nrow(G))
     V_inv = chol2inv(chol(V))
     gamma_hat =  D %*% (t(G) %*%  (V_inv %*% (outcome - intercept - G %*% (rep(mu,ncol(G))  )  ))) +  mu
@@ -51,7 +51,7 @@ Testing_coefficient_of_mediator=function(G,mediator,outcome,outcome_type="contin
     sigma2_error=as.numeric(sigma2_error+d2)
 
 
-    D_inv=diag(rep(sigma2_gamma^(-1),ncol(G)) )
+    D_inv=diag(rep(sigma2_gamma^(-1),ncol(G)),nrow = ncol(G), ncol = ncol(G) )
     Q_null=-0.5*nrow(G)*log(2*3.1415926*sigma2_error)-1/(2*sigma2_error)*t(outcome-intercept-G%*%gamma_hat)%*%(outcome-intercept-G%*%gamma_hat)-0.5*sum(log(2*3.1415926*diag(D)))-0.5*t(gamma_hat-mu)%*%D_inv%*%(gamma_hat-mu)
 
     Q_null=as.numeric(Q_null)
