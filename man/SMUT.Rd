@@ -12,6 +12,10 @@ Testing the mediation effect of multiple SNPs on an outcome through a mediator.
 Wujuan Zhong
 }
 
+\references{
+Zhong, W., Spracklen, C. N., Mohlke, K. L., Zheng, X., Fine, J., & Li, Y. (2019). Multi-SNP mediation intersection-union test. \emph{Bioinformatics}.
+}
+
 \usage{
 SMUT(G, mediator, outcome, 
 outcome_type="continuous", method="score",approxi=TRUE, debug=FALSE)

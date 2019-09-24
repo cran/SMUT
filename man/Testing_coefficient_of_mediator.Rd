@@ -68,6 +68,6 @@ outcome = 2 + eigenMapMatMult(Genotype_data,gamma) + theta*mediator + e2
 p_value=Testing_coefficient_of_mediator(G=Genotype_data,mediator=mediator,outcome=outcome)
 print(p_value)
 
-# Thanks for using our R package SMUT ~~
+# Thanks for using our R package SMUT 
 }
 

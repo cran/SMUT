@@ -30,6 +30,6 @@ B=as.matrix(c(5.0, 2.0, 0.0))
 eigenMapMatMult(A,B)
 # the result is the same as A \%*\% B
 
-# Thanks for using our R package SMUT ~~
+# Thanks for using our R package SMUT 
 }
 
